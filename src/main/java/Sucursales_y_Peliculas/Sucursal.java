@@ -25,13 +25,6 @@ public class Sucursal {
         salas.put(SALA_2, capacidadSala2);
         salas.put(SALA_3, capacidadSala3);
     }
-    public void agregarPelicula(Peliculas pelicula) {
-        peliculas.add(pelicula);
-        System.out.println( "Película agregada: ");
-    }
-     public String getSucursal() {
-        return nombre_sucursal;
-    }
-   
-}
+    
+  }    
 
