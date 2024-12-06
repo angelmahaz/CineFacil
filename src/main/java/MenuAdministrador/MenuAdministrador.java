@@ -118,6 +118,30 @@ public class MenuAdministrador {
                    
                     System.out.println("Producto agregado con éxito.");
                     break;
+               case 5: 
+                GestorUsuarios gestor = new GestorUsuarios();
+                gestor.listarUsuarios();
+                break;
+                case 6:
+                GestorUsuarios gestores=new GestorUsuarios();
+                System.out.print("Nombre: ");
+                String nombr=leerDato.nextLine();
+                System.out.print("Apellido Paterno: ");
+                String apellidoPaterno = leerDato.nextLine();
+                System.out.print("Apellido Materno: ");
+                String apellidoMaterno = leerDato.nextLine();
+                System.out.print("Dirección: ");
+                String direccion = leerDato.nextLine();
+                System.out.print("Celular: ");
+                String celular = leerDato.nextLine();
+                System.out.print("Correo Electrónico: ");
+                String correo = leerDato.nextLine();
+                System.out.print("Contraseña: ");
+                String contrasena = leerDato.nextLine();
+                gestores.agregarUsuario(nombr, apellidoPaterno, apellidoMaterno, direccion, celular, correo, contrasena);
+                break;
+                case 7: 
+                    
                 default:
                 break;
     }
